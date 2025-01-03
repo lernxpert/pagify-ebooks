@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Store - Genres</title>
+    <title>Online Store - Books</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
             padding: 0;
             background-color: #f4f4f9;
         }
-        .genre-container {
+        .store-container {
             padding: 20px;
             max-width: 1200px;
             margin: auto;
@@ -19,42 +19,114 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .genre-title {
+        .store-title {
             text-align: center;
             font-size: 2em;
             margin-bottom: 20px;
             color: #333333;
         }
-        .genre-list {
+        .genre-section {
+            margin-bottom: 30px;
+        }
+        .genre-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #555555;
+        }
+        .book-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             gap: 15px;
         }
-        .genre-item {
-            padding: 10px 20px;
-            background-color: #0073e6;
-            color: #ffffff;
-            text-decoration: none;
+        .book-item {
+            padding: 15px;
+            background-color: #eaf0f6;
+            border: 1px solid #dcdcdc;
             border-radius: 5px;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease;
+            flex: 1 1 calc(25% - 15px);
+            max-width: calc(25% - 15px);
+            text-align: center;
         }
-        .genre-item:hover {
-            background-color: #005bb5;
+        .book-item h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+        .book-item p {
+            font-size: 1em;
+            color: #666666;
         }
     </style>
 </head>
 <body>
-    <div class="genre-container">
-        <h1 class="genre-title">Explore Our Genres</h1>
-        <div class="genre-list">
-            <a href="#sci-fi" class="genre-item">Sci-Fi</a>
-            <a href="#self-development" class="genre-item">Self-Development</a>
-            <a href="#emotion" class="genre-item">Emotion</a>
-            <a href="#mystery" class="genre-item">Mystery</a>
-            <a href="#fantasy" class="genre-item">Fantasy</a>
-            <a href="#romance" class="genre-item">Romance</a>
+    <div class="store-container">
+        <h1 class="store-title">Welcome to Our Online Bookstore</h1>
+        
+        <!-- Sci-Fi Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Sci-Fi</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Self-Development Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Self-Development</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <h3>A Guide for Transforming Your Life</h3>
+                    <p>Author: Jane Doe</p>
+                    <p>Price: $19.99</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Emotion Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Emotion</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mystery Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Mystery</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fantasy Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Fantasy</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Romance Section -->
+        <div class="genre-section">
+            <h2 class="genre-title">Romance</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
