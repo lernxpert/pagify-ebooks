@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Online Bookstore</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #0073e6;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Store Section */
+        .store-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .store-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .genre-section {
+            margin-bottom: 40px;
+        }
+
+        .genre-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
+            color: #333;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .book-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .book-card h3 {
+            font-size: 1.2em;
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+
+        .book-card p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .book-card .price {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .book-card button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .book-card button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0073e6;
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ProBookstore</h1>
+        <nav>
+            <a href="#sci-fi">Sci-Fi</a>
+            <a href="#self-development">Self-Development</a>
+            <a href="#emotion">Emotion</a>
+            <a href="#mystery">Mystery</a>
+            <a href="#fantasy">Fantasy</a>
+            <a href="#romance">Romance</a>
+        </nav>
+    </header>
+
+    <!-- Store Content -->
+    <div class="store-container">
+        <h1 class="store-title">Welcome to ProBookstore</h1>
+
+        <!-- Sci-Fi Section -->
+        <div id="sci-fi" class="genre-section">
+            <h2 class="genre-title">Sci-Fi</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Self-Development Section -->
+        <div id="self-development" class="genre-section">
+            <h2 class="genre-title">Self-Development</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <h3>A Guide for Transforming Your Life</h3>
+                    <p>Author: Jane Doe</p>
+                    <p class="price">$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emotion Section -->
+        <div id="emotion" class="genre-section">
+            <h2 class="genre-title">Emotion</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mystery Section -->
+        <div id="mystery" class="genre-section">
+            <h2 class="genre-title">Mystery</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fantasy Section -->
+        <div id="fantasy" class="genre-section">
+            <h2 class="genre-title">Fantasy</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Romance Section -->
+        <div id="romance" class="genre-section">
+            <h2 class="genre-title">Romance</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <h3>Coming Soon</h3>
+                    <p>New books will be added shortly!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ProBookstore. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
